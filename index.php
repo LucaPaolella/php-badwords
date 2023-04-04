@@ -1,3 +1,12 @@
+<?php
+
+
+//Inserisco per vedere se funziona tutto bene:
+var_dump($_POST);
+
+?>
+
+<!--Inizio HTML-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +16,20 @@
     <title>Document</title>
 </head>
 <body>
-    ciao
+
+<h1> Ciao! Benvenuto nel censuratore di cose accuratissimo:</h1>
+
+    <form action="badwords.php" method="POST">
+        <input type="text" name="goodwords" placeholder="parola da non censurare">
+        
+
+        <input type="text" name="badwords" placeholder="parola da censurare">
+        <button>Invia</button>
+    </form>
+
+
+
+<div></div>
+    
 </body>
 </html>
